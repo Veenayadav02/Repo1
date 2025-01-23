@@ -27,10 +27,10 @@ jobs:
 
             // Output the result using correct string interpolation
             if (!isAdmin) {
-              console.log(User ${prUser} is not an admin. Blocking the merge.);  // Correct use of backticks and string interpolation
+              console.log('User ${prUser} is not an admin. Blocking the merge.');  // Correct use of backticks and string interpolation
               return 'non-admin';  // Return non-admin status for later steps
             } else {
-              console.log(User ${prUser} is an admin. Merge allowed.);  // Correct use of backticks and string interpolation
+              console.log('User ${prUser} is an admin. Merge allowed.');  // Correct use of backticks and string interpolation
               return 'admin';  // Return admin status for later steps
             }
 
